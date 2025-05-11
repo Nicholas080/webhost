@@ -3,7 +3,8 @@ name: Run Login Script
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 1 * *"  # 每月1号运行一次
+    #- cron: "0 0 1 * *"  # 每月1号运行一次
+    - cron: "0 11 * * 6"  # 每周六 11：00运行一次
   push:
     branches:
       - main
